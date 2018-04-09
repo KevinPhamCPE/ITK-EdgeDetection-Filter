@@ -1,3 +1,3 @@
 # ITK-EdgeDetection-Filter
 
-This filter using itk library allows you to detect the edges in an image.
+This filter uses the ITK library and allows you to detect the edges in an image.
