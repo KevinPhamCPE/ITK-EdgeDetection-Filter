@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<executable>
+<title>MyFilter</title>
+<description>This is an EdgeDetection fitler based of the CannyEdgeDetection algorithm
+</description>
+<version>1.0</version>
+  <contributor>Kevin Pham</contributor>
+
+  <parameters>
+   <label>Input Output</label>
+
+   <image> 
+    <name>InputImage</name>
+    <label>Input Image</label>
+    <channel>input</channel>
+    <index>0</index>
+   </image>
+
+   <image>
+    <name>OutputImage</name>
+    <label>Output Image</label>
+    <channel>output</channel>
+    <index>1</index>
+   </image>
+
+   <float>
+    <name>variance</name>
+    <flag>v</flag>
+    <label>Variance</label>
+    <channel>input</channel>
+    <constraints>
+        <minimum>.001</minimum>
+        <maximum>10</maximum>
+        <step>.01</step>
+      </constraints>
+   </float>
+
+   <integer>
+    <name>upperThreshold</name>
+    <longflag>upper</longflag>
+    <label>Upper Treshold</label>
+    <channel>input</channel>
+    <constraints>
+        <minimum>0</minimum>
+        <maximum>255</maximum>
+        <step>1</step>
+      </constraints>
+   </integer>
+   <integer>
+    <name>lowerThreshold</name>
+    <longflag>lower</longflag>
+    <label>Lower Threshold</label>
+    <channel>input</channel>
+    <constraints>
+        <minimum>0</minimum>
+        <maximum>255</maximum>
+        <step>1</step>
+      </constraints>
+   </integer>  
+
+  </parameters>
+
+</executable>
